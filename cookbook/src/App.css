@@ -1,31 +1,98 @@
+html { font-size: 62.5%; }
+
 .App {
   text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  word-break:keep-all;
+  min-width: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.nav_Bar{
+  background-color: gray;
+  padding: 15px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ul { list-style: none; }
+a {text-decoration: none; color: black;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav_Bar > ul{
   display: flex;
-  flex-direction: column;
+  width: 70%;
+  max-width: 1000px;
+  min-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav_Bar > ul li{
+  font-family: 'Tenada';
+  line-height: 20px;
+  font-size: 2.0rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-grow: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.search_Bar{
+  position: relative;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #bbb;
+  margin: 10px 0;
+  padding: 10px 12px;
+  font-family: 'Tenada';
+  font-size: 1.6rem;
+}
+
+input:focus {outline: none;}
+
+.fa-search{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  margin: 0;
+}
+
+.container{
+  width: 70%;
+  background-color: rgb(172, 229, 255);
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content{
+  overflow: hidden;
+}
+
+.recipe{
+  width: 80%;
+  border-radius: 10px;
+  height: 80px;
+  background-color: beige;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.recipe > p{
+  font-size: 2.0rem;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: 700;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +102,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'Tenada';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
